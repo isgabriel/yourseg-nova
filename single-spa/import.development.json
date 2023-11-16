@@ -1,0 +1,9 @@
+{
+    "imports": {
+        "@gm/root-config": "http://localhost:9000/gm-root-config.js",
+        "@gm/aplicacao-yourseg": "http://localhost:8500/gm-aplicacao-yourseg.js",
+        "@gm/header": "http://localhost:8600/gm-header.js",
+        "@gm/nossos-seguros": "http://localhost:8700/gm-nossos-seguros.js",
+        "@gm/contratar-seguro": "http://localhost:8800/gm-contratar-seguro.js"
+    }
+}

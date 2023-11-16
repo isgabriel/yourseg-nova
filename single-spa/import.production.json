@@ -1,0 +1,9 @@
+{
+    "imports": {
+        "@gm/root-config": "https://yourseg.vercel.app/gm-root-config.js",
+        "@gm/aplicacao-yourseg": "https://yourseg.vercel.app/gm-aplicacao-yourseg.js",
+        "@gm/header": "https://yourseg.vercel.app/gm-header.js",
+        "@gm/nossos-seguros": "https://yourseg.vercel.app/gm-nossos-seguros.js",
+        "@gm/contratar-seguro": "https://yourseg.vercel.app/gm-contratar-seguro.js"
+    }
+}

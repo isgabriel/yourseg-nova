@@ -43,17 +43,15 @@
         />
 
         <% if (isLocal) { %>
-        <script type="systemjs-importmap">
-            {
-                "imports": {
-                    "@gm/root-config": "//localhost:9000/gm-root-config.js",
-                    "@gm/aplicacao-yourseg": "//localhost:8500/gm-aplicacao-yourseg.js",
-                    "@gm/header": "//localhost:8600/gm-header.js",
-                    "@gm/nossos-seguros": "//localhost:8700/gm-nossos-seguros.js",
-                    "@gm/contratar-seguro": "//localhost:8800/gm-contratar-seguro.js"
-                }
-            }
-        </script>
+        <script
+            type="systemjs-importmap"
+            src="https://yourseg.vercel.app/import.development.json"
+        ></script>
+        <% } else { %>
+        <script
+            type="systemjs-importmap"
+            src="https://yourseg.vercel.app/import.production.json"
+        ></script>
         <% } %>
 
         <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
