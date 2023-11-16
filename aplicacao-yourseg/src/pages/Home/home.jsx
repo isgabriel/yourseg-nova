@@ -16,7 +16,7 @@ const Home = () => {
                 </p>
                 <p>
                     Garantimos, em <span>todos os nossos serviços</span>,
-                    <span>proteção personalizada</span> e{" "}
+                    <span> proteção personalizada</span> e{" "}
                     <span>atendimento excepcional</span> para garantir seu
                     conforto e segurança desde o início!
                 </p>
