@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+
         <!-- Clarity -->
         <script type="text/javascript">
             (function (c, l, a, r, i, t, y) {
@@ -43,14 +51,21 @@
         />
 
         <% if (isLocal) { %>
-        <script
-            type="systemjs-importmap"
-            src="https://yourseg.vercel.app/import.development.json"
-        ></script>
+        <script type="systemjs-importmap">
+            {
+                "imports": {
+                    "@gm/root-config": "//localhost:9000/gm-root-config.js",
+                    "@gm/aplicacao-yourseg": "//localhost:8500/gm-aplicacao-yourseg.js",
+                    "@gm/header": "//localhost:8600/gm-header.js",
+                    "@gm/nossos-seguros": "//localhost:8700/gm-nossos-seguros.js",
+                    "@gm/contratar-seguro": "//localhost:8800/gm-contratar-seguro.js"
+                }
+            }
+        </script>
         <% } else { %>
         <script
             type="systemjs-importmap"
-            src="https://yourseg.vercel.app/import.production.json"
+            src="../import.production.json"
         ></script>
         <% } %>
 

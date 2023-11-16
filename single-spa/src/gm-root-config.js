@@ -11,15 +11,15 @@ registerApplication({
 });
 
 registerApplication({
-    name: "@gm/contratar-seguro",
-    app: () => System.import("@gm/contratar-seguro"),
-    activeWhen: (location) => location.pathname === "/contratar-seguro",
-});
-
-registerApplication({
     name: "@gm/aplicacao-yourseg",
     app: () => System.import("@gm/aplicacao-yourseg"),
     activeWhen: ["/aplicacao-yourseg"],
+});
+
+registerApplication({
+    name: "@gm/contratar-seguro",
+    app: () => System.import("@gm/contratar-seguro"),
+    activeWhen: (location) => location.pathname === "/contratar-seguro",
 });
 
 registerApplication({
