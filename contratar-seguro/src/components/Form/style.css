@@ -1,0 +1,65 @@
+.form {
+    font-family: "Poppins", sans-serif;
+
+    width: 100%;
+    max-width: 1100px;
+
+    padding-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    .div-input {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+
+        > label {
+            text-align: left;
+
+            width: 90%;
+
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        > input,
+        > select {
+            outline: 0;
+
+            width: 90%;
+
+            border: 1px solid #ffefe6;
+
+            padding: 15px 10px;
+
+            color: #ffefe6;
+            background: linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.3) 0%,
+                    rgba(0, 0, 0, 0.3) 100%
+                ),
+                rgba(101, 69, 31, 0.37);
+
+            &:focus {
+                background: linear-gradient(
+                        0deg,
+                        rgba(0, 0, 0, 0.5) 0%,
+                        rgba(0, 0, 0, 0.5) 100%
+                    ),
+                    rgba(101, 69, 31, 0.57);
+            }
+            &::placeholder {
+                color: #e0dad8;
+            }
+        }
+        > select {
+            cursor: pointer;
+        }
+    }
+}
