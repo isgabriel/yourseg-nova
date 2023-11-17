@@ -3,7 +3,7 @@ button {
 
     width: 90%;
 
-    font-size: 14px;
+    font-size: 0.875rem;
 
     padding: 11px 0;
 
@@ -26,10 +26,10 @@ button {
     }
 
     @media (min-width: 769px) {
-        font-size: 16px;
+        font-size: 1rem;
 
         width: 90%;
 
-        padding: 15px 10px;
+        padding: 0.9375rem 0.625rem;
     }
 }
