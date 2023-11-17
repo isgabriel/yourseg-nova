@@ -1,8 +1,17 @@
+import { cards } from "./data";
+import Card from "./components/Card";
+import "./styles.css";
+
 const App = () => {
+    const listOfcards = cards.map((card, index) => (
+        <Card key={index} id={index} card={card} />
+    ));
+
     return (
-        <div>
-            <h1>Nossos Seguros</h1>
-        </div>
+        <main className="main-container">
+            <h1 className="title-page">QUEM SOMOS?</h1>
+            <ul>{listOfcards}</ul>
+        </main>
     );
 };
 
