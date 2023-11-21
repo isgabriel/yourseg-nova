@@ -10,6 +10,11 @@ const App = () => {
     return (
         <main className="main-container">
             <h1 className="title-page">QUEM SOMOS?</h1>
+            <p>
+                Somos uma empresa especializada no ramo de seguros com
+                <span> mais de 20 anos no mercado</span> e temos diferentes
+                planos, com diferentes benefícios. Confira:
+            </p>
             <ul>{listOfcards}</ul>
         </main>
     );

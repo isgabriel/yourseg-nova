@@ -40,7 +40,7 @@ const Form = () => {
                 <div className="div-input">
                     <label htmlFor="cpf">CPF</label>
                     <input
-                        type="text"
+                        type="number"
                         id="cpf"
                         placeholder="Digite seu CPF..."
                         required

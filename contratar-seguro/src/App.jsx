@@ -4,7 +4,7 @@ import "./style.css";
 const App = () => {
     return (
         <main className="main-container">
-            <div>
+            <div className="text-div">
                 <h1>Contratar Seguro</h1>
                 <p>
                     Preencha o formulário abaixo e um de nossos especialistas
