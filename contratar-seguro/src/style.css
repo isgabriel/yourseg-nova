@@ -52,7 +52,6 @@
     @media (min-width: 769px) {
         padding-top: 20px;
         > div {
-            padding-top: 70px;
             > h1 {
                 font-size: 4rem;
             }

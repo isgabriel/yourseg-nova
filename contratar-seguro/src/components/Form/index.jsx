@@ -29,9 +29,10 @@ const Form = () => {
                     />
                 </div>
                 <div className="div-input">
-                    <label htmlFor="">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input
                         type="text"
+                        id="email"
                         placeholder="Digite seu email..."
                         required
                     />
@@ -48,7 +49,8 @@ const Form = () => {
                 <div className="div-input">
                     <label htmlFor="telefone">Telefone</label>
                     <input
-                        type="text"
+                        type="number"
+                        id="telefone"
                         placeholder="Digite seu telefone..."
                         required
                     />

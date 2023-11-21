@@ -1,6 +1,6 @@
 import { cards } from "./data";
 import Card from "./components/Card";
-import "./styles.css";
+import "./style.css";
 
 const App = () => {
     const listOfcards = cards.map((card, index) => (

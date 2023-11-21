@@ -1,0 +1,44 @@
+.main-container {
+    font-family: "Roboto", sans-serif;
+
+    background: url(./assets/familia-1-desfocada.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+
+    > ul {
+        width: 90%;
+        /* max-width: 1190px; */
+
+        list-style: none;
+
+        display: flex;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        justify-content: center;
+        gap: 20px;
+    }
+
+    @media (min-width: 769px) {
+        > ul {
+            width: autos;
+
+            justify-content: space-between;
+            gap: 35px;
+
+            padding: 35px 100px;
+        }
+    }
+}
+.title-page {
+    color: white;
+    font-size: 80px;
+}
