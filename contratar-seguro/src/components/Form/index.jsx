@@ -61,9 +61,12 @@ const Form = () => {
                         <option value="" selected disabled>
                             Selecionar o tipo de seguro...
                         </option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
+                        <option value="1">Seguro Residencial</option>
+                        <option value="2">Seguro Automotivo</option>
+                        <option value="3">Seguro de Saúde</option>
+                        <option value="4">Seguro de Viagem</option>
+                        <option value="5">Seguro Empresarial</option>
+                        <option value="6">Seguro Aluguel</option>
                     </select>
                 </div>
                 <Button />
