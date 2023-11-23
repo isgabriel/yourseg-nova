@@ -15,7 +15,7 @@ const Form = () => {
         );
 
         setTimeout(() => {
-            navigate("/aplicacao-yourseg");
+            navigate("/");
         }, 5000);
     };
     return (
