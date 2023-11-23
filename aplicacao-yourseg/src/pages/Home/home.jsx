@@ -1,3 +1,4 @@
+import App from "../../../../nossos-seguros/src/App";
 import "./style.css";
 
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
                     <span>tranquilidade</span> que merece.
                 </p>
                 <p>
-                    Garantimos, em <span>todos os nossos serviços</span>,
+                    <span>Garantimos</span>, em todos os nossos serviços,
                     <span> proteção personalizada</span> e{" "}
                     <span>atendimento excepcional</span> para garantir seu
                     conforto e segurança desde o início!

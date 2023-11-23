@@ -1,10 +1,12 @@
 import Button from "../Button";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
+import { useNavigate } from "react-router-dom";
 
 import "./style.css";
 
 const Form = () => {
+    const navigate = useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -13,7 +15,8 @@ const Form = () => {
         );
 
         setTimeout(() => {
-            window.location.href = "/aplicacao-yourseg";
+            // window.location.href = "/aplicacao-yourseg";
+            navigate("/aplicacao-yourseg");
         }, 5000);
     };
     return (
