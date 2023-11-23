@@ -1,0 +1,9 @@
+{
+    "imports": {
+        "@gm/root-config": "https://yourseg-isgabriel.nyc3.digitaloceanspaces.com/gm-root-config.js",
+        "@gm/aplicacao-yourseg": "https://yourseg-isgabriel.nyc3.digitaloceanspaces.com/gm-aplicacao-yourseg.js",
+        "@gm/header": "https://yourseg-isgabriel.nyc3.digitaloceanspaces.com/gm-header.js",
+        "@gm/nossos-seguros": "https://yourseg-isgabriel.nyc3.digitaloceanspaces.com/gm-nossos-seguros.js",
+        "@gm/contratar-seguro": "https://yourseg-isgabriel.nyc3.digitaloceanspaces.com/gm-contratar-seguro.js"
+    }
+}

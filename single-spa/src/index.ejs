@@ -51,21 +51,14 @@
         />
 
         <% if (isLocal) { %>
-        <script type="systemjs-importmap">
-            {
-                "imports": {
-                    "@gm/root-config": "//localhost:9000/gm-root-config.js",
-                    "@gm/aplicacao-yourseg": "//localhost:8500/gm-aplicacao-yourseg.js",
-                    "@gm/header": "//localhost:8600/gm-header.js",
-                    "@gm/nossos-seguros": "//localhost:8700/gm-nossos-seguros.js",
-                    "@gm/contratar-seguro": "//localhost:8800/gm-contratar-seguro.js"
-                }
-            }
-        </script>
+        <script
+            type="systemjs-importmap"
+            src="https://yourseg-isgabriel.nyc3.digitaloceanspaces.com/importmap.development.json"
+        ></script>
         <% } else { %>
         <script
             type="systemjs-importmap"
-            src="../import.production.json"
+            src="https://yourseg-isgabriel.nyc3.digitaloceanspaces.com/importmap.production.json"
         ></script>
         <% } %>
 

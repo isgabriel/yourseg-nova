@@ -15,7 +15,6 @@ const Form = () => {
         );
 
         setTimeout(() => {
-            // window.location.href = "/aplicacao-yourseg";
             navigate("/aplicacao-yourseg");
         }, 5000);
     };

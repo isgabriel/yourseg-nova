@@ -1,40 +1,22 @@
 import { registerApplication, start } from "single-spa";
 
 // registrar os micro frontends
-registerApplication({
-    name: "@single-spa/welcome",
-    app: () =>
-        System.import(
-            "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js"
-        ),
-    activeWhen: (location) => location.pathname === "/",
-});
-
-registerApplication({
-    name: "@gm/aplicacao-yourseg",
-    app: () => System.import("@gm/aplicacao-yourseg"),
-    activeWhen: ["/aplicacao-yourseg"],
-});
-
-registerApplication({
-    name: "@gm/contratar-seguro",
-    app: () => System.import("@gm/contratar-seguro"),
-    activeWhen: (location) => location.pathname === "/contratar-seguro",
-});
-
-registerApplication({
-    name: "@gm/header",
-    app: () => System.import("@gm/header"),
-    activeWhen: ["/"],
-});
-
-registerApplication({
-    name: "@gm/nossos-seguros",
-    app: () => System.import("@gm/nossos-seguros"),
-    activeWhen: (location) => location.pathname === "/nossos-seguros",
-});
-
-//inicia a montage/desmontagem dos micro frontends
-start({
-    urlRerouteOnly: true,
-});
+fetch("https://run.mocky.io/v3/4b6e38e4-4608-4ced-b0a6-4f00a3d728d6")
+    .then((res) => res.json())
+    .then((data) => {
+        data.applications.forEach((app) => {
+            registerApplication({
+                name: app.name,
+                app: () => System.import(app.package),
+                activeWhen: app.exact
+                    ? (location) => location.pathname === app.activeWhen
+                    : [app.activeWhen],
+            });
+        });
+    })
+    .finally(() => {
+        //inicia a montage/desmontagem dos micro frontends
+        start({
+            urlRerouteOnly: true,
+        });
+    });
