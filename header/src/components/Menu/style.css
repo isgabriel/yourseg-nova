@@ -1,0 +1,64 @@
+section {
+    > nav > span {
+        color: #fff;
+
+        text-transform: uppercase;
+
+        font-family: "Poppins", sans-serif;
+    }
+    .navMobile {
+        width: 80%;
+        min-height: 100vh;
+
+        background-color: #654520;
+
+        padding: 100px 20px 0;
+
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        > span {
+            font-size: 1.875rem;
+            font-weight: 700;
+        }
+        .logo-menu {
+            position: absolute;
+            bottom: 20px;
+            right: 30%;
+        }
+    }
+    .navDesktop {
+        display: none;
+    }
+
+    @media (min-width: 769px) {
+        .navMobile {
+            display: none;
+        }
+        .navDesktop {
+            width: inherit;
+            max-width: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            > span {
+                font-size: 1.5625rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
+.menu-open {
+    position: fixed;
+    top: 0;
+
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(15, 15, 15, 0.65);
+}
+.menu-closed {
+    width: 100%;
+    max-width: 470px;
+}

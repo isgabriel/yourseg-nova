@@ -1,39 +1,35 @@
-import { BrowserRouter, Link } from "react-router-dom";
-
+import { useState } from "react";
 import "./style.css";
+import Menu from "../Menu";
 
 const Header = () => {
-    const scrollHome = () => {
-        const element = document.getElementById("home");
+    const [menu, setMenu] = useState(false);
 
-        element.scrollIntoView({ behavior: "smooth" });
-    };
-    const scrollNossosSeguros = () => {
-        const element = document.getElementById("nossos-seguros");
+    const menuBtn =
+        "https://raw.githubusercontent.com/isgabriel/yourseg-nova/903175a919b75aa6d7caf83d2ad7a26fe859c0dc/header/src/assets/menu-hamburguer%201.svg";
+    const closeBtn =
+        "https://raw.githubusercontent.com/isgabriel/yourseg-nova/bacd32490223dc9cd502562879465c4c23e2bd1c/header/src/assets/close-button.svg";
 
-        element.scrollIntoView({ behavior: "smooth" });
+    const handleMenu = () => {
+        setMenu(!menu);
     };
-    const scrollContratar = () => {
-        const element = document.getElementById("contratar-seguro");
 
-        element.scrollIntoView({ behavior: "smooth" });
-    };
     return (
-        <BrowserRouter>
-            <header className="header">
-                <p>
-                    Your<span>Seg</span>
-                </p>
-                <nav className="navbar">
-                    <span onClick={scrollHome}>Home</span>
-                    <span onClick={scrollNossosSeguros}>Quem Somos</span>
-                    <span onClick={scrollContratar}>Contratar um Seguro</span>
-                    {/* <Link to="#home">Home</Link>
-                    <Link to="#nossos-seguros">Quem somos</Link>
-                    <Link to="#contratar-seguro">Contratar um Seguro</Link> */}
-                </nav>
-            </header>
-        </BrowserRouter>
+        <header className="header">
+            <button
+                className={menu ? "close-menu-btn" : "open-menu-btn"}
+                onClick={handleMenu}
+            >
+                <img src={menu ? closeBtn : menuBtn} alt="menu hamburguer" />
+            </button>
+            <figure className="logo-header">
+                <img
+                    src="https://raw.githubusercontent.com/isgabriel/yourseg-nova/903175a919b75aa6d7caf83d2ad7a26fe859c0dc/header/src/assets/logo-header.svg"
+                    alt="logo header"
+                />
+            </figure>
+            <Menu menu={menu} setMenu={setMenu} />
+        </header>
     );
 };
 
