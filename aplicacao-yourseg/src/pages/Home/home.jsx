@@ -1,9 +1,9 @@
-import App from "../../../../nossos-seguros/src/App";
+import NossosSeguros from "../../../../nossos-seguros/src/App";
 import "./style.css";
 
 const Home = () => {
     return (
-        <main className="main-home-container">
+        <section className="main-home-container" id="home">
             <h1>
                 Somos a YourSeg e <span>garantimos </span> a proteção dos seus
                 bens mais preciosos!
@@ -22,7 +22,7 @@ const Home = () => {
                     conforto e segurança desde o início!
                 </p>
             </div>
-        </main>
+        </section>
     );
 };
 

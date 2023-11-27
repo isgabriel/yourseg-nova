@@ -1,12 +1,10 @@
 import Button from "../Button";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
-import { useNavigate } from "react-router-dom";
 
 import "./style.css";
 
 const Form = () => {
-    const navigate = useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -15,8 +13,8 @@ const Form = () => {
         );
 
         setTimeout(() => {
-            navigate("/");
-        }, 5000);
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }, 2000);
     };
     return (
         <>

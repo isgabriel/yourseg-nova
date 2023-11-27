@@ -2,10 +2,10 @@ import { BrowserRouter } from "react-router-dom";
 import Form from "./components/Form";
 import "./style.css";
 
-const App = () => {
+const ContratarSeguro = () => {
     return (
         <BrowserRouter>
-            <main className="main-container">
+            <section className="main-container" id="contratar-seguro">
                 <div className="text-div">
                     <h1>Contratar Seguro</h1>
                     <p>
@@ -15,9 +15,9 @@ const App = () => {
                     </p>
                 </div>
                 <Form />
-            </main>
+            </section>
         </BrowserRouter>
     );
 };
 
-export default App;
+export default ContratarSeguro;

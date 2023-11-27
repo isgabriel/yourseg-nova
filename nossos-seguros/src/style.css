@@ -1,10 +1,12 @@
-.main-container {
+.main-container-1 {
     font-family: "Roboto", sans-serif;
 
-    background: url(https://github.com/isgabriel/yourseg-nova/blob/main/contratar-seguro/src/assets/familia-1-desfocada.jpg?raw=true);
+    background-color: white;
+
+    /* background: url(https://github.com/isgabriel/yourseg-nova/blob/main/contratar-seguro/src/assets/familia-1-desfocada.jpg?raw=true);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 
     min-height: 100vh;
 

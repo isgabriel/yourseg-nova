@@ -6,11 +6,16 @@ const Header = () => {
     return (
         <BrowserRouter>
             <header className="header">
-                <div>logo</div>
+                <p>
+                    Your<span>Seg</span>
+                </p>
                 <nav className="navbar">
-                    <Link to="/">Home</Link>
-                    <Link to="/nossos-seguros">Quem somos</Link>
-                    <Link to="/contratar-seguro">Contratar um Seguro</Link>
+                    <span onClick={}>Home</span>
+                    <span onClick={}>Quem Somos</span>
+                    <span onClick={}>Contratar um Seguro</span>
+                    {/* <Link to="#home">Home</Link>
+                    <Link to="#nossos-seguros">Quem somos</Link>
+                    <Link to="#contratar-seguro">Contratar um Seguro</Link> */}
                 </nav>
             </header>
         </BrowserRouter>

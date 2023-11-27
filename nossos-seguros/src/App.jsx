@@ -2,13 +2,13 @@ import { cards } from "./data";
 import Card from "./components/Card";
 import "./style.css";
 
-const App = () => {
+const NossosSeguros = () => {
     const listOfcards = cards.map((card, index) => (
         <Card key={index} id={index} card={card} />
     ));
 
     return (
-        <main className="main-container">
+        <section className="main-container-1" id="nossos-seguros">
             <h1>QUEM SOMOS?</h1>
             <p>
                 Somos uma empresa especializada no ramo de seguros com
@@ -16,8 +16,8 @@ const App = () => {
                 planos, com diferentes benefícios. Confira:
             </p>
             <ul>{listOfcards}</ul>
-        </main>
+        </section>
     );
 };
 
-export default App;
+export default NossosSeguros;
