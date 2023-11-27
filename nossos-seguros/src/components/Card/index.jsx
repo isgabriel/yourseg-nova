@@ -2,7 +2,9 @@ import "./style.css";
 
 const Card = ({ index, card }) => {
     const handleClick = () => {
-        window.location.replace("/contratar-seguro");
+        const element = document.getElementById("contratar-seguro");
+
+        element.scrollIntoView({ behavior: "smooth" });
     };
     return (
         <li id={index} className="item" onClick={handleClick}>
