@@ -5,6 +5,13 @@ import Menu from "../Menu";
 const Header = () => {
     const [menu, setMenu] = useState(false);
 
+    const scrollHome = () => {
+        const element = document.getElementById("home");
+
+        element.scrollIntoView({ behavior: "smooth" });
+        setMenu(false);
+    };
+
     const menuBtn =
         "https://raw.githubusercontent.com/isgabriel/yourseg-nova/903175a919b75aa6d7caf83d2ad7a26fe859c0dc/header/src/assets/menu-hamburguer%201.svg";
     const closeBtn =
@@ -26,6 +33,7 @@ const Header = () => {
                 <img
                     src="https://raw.githubusercontent.com/isgabriel/yourseg-nova/903175a919b75aa6d7caf83d2ad7a26fe859c0dc/header/src/assets/logo-header.svg"
                     alt="logo header"
+                    onClick={scrollHome}
                 />
             </figure>
             <Menu menu={menu} setMenu={setMenu} />

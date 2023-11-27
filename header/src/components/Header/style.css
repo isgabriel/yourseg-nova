@@ -62,6 +62,7 @@
         }
         .logo-header {
             display: block;
+            cursor: pointer;
         }
     }
 }
