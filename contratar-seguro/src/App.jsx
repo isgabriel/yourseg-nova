@@ -6,6 +6,11 @@ const ContratarSeguro = () => {
     return (
         <BrowserRouter>
             <section className="main-container" id="contratar-seguro">
+                <img
+                    src="https://raw.githubusercontent.com/isgabriel/yourseg-nova/dbc8fd3089df922e4e1e2fc170c07916a36ea9d0/nossos-seguros/src/assets/vetor-v.svg"
+                    alt="vetor down"
+                    className="vetor-down"
+                />
                 <div className="text-div">
                     <h1>Contratar Seguro</h1>
                     <p>

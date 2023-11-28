@@ -11,8 +11,8 @@ const NossosSeguros = () => {
         <section className="main-container-1" id="nossos-seguros">
             <h1>QUEM SOMOS?</h1>
             <p>
-                Somos uma empresa especializada no ramo de seguros com
-                <span> mais de 20 anos no mercado</span> e temos diferentes
+                Somos uma <span>empresa especializada</span> no ramo de seguros
+                <span>com mais de 20 anos no mercado</span> e temos diferentes
                 planos, com diferentes benefícios. Confira:
             </p>
             <ul>{listOfcards}</ul>

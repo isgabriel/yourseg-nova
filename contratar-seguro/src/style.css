@@ -5,6 +5,7 @@
 }
 
 .main-container {
+    position: relative;
     font-family: "Roboto", sans-serif;
 
     background-size: cover;
@@ -21,6 +22,12 @@
 
     text-align: left;
 
+    .vetor-down {
+        position: absolute;
+        top: 0;
+
+        width: 100%;
+    }
     .text-div {
         padding-top: 200px;
 
