@@ -3,52 +3,70 @@
     padding: 0;
 
     font-family: "Roboto", sans-serif;
+    color: white;
 }
 
 .main-home-container {
+    position: relative;
+
+    padding-top: 82px;
+
     background-color: #654520;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 60px;
+    gap: 30px;
 
     > h1 {
-        font-size: 2rem;
-        font-weight: 700;
-        width: 80%;
+        font-family: "Sora", sans-serif;
+        font-size: 2.25rem;
+        font-weight: 600;
 
-        > span {
-            color: #7c3c21;
-        }
+        width: 90%;
     }
 
     .home-description {
+        position: relative;
+        z-index: 4;
         display: flex;
         flex-direction: column;
 
         gap: 30px;
 
-        width: 80%;
+        width: 90%;
+        padding-bottom: 60px;
 
         > p {
             font-size: 0.875rem;
-            font-weight: 500;
+            font-weight: 400;
 
             > span {
-                color: #a8390a;
+                color: #1a1108;
+                font-weight: 600;
             }
         }
     }
+    .vetor-curve {
+        width: 100%;
+        height: 100%;
+
+        z-index: 3;
+    }
+    .family {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        width: 55%;
+        /* height: 55%; */
+
+        z-index: 2;
+    }
 
     @media (min-width: 769px) {
+        padding-top: 130px;
+
         > h1 {
             width: 100%;
 
@@ -61,6 +79,11 @@
                 padding: 0 100px;
                 font-size: 1.1875rem;
             }
+        }
+        .family {
+            bottom: 5%;
+            width: auto;
+            height: auto;
         }
     }
 }
