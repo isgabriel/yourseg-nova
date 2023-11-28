@@ -8,6 +8,7 @@
     position: relative;
     font-family: "Roboto", sans-serif;
 
+    background: url(https://raw.githubusercontent.com/isgabriel/yourseg-nova/9c9783c5d0a8f0e09422912e7c7c4d755189fb2b/contratar-seguro/src/assets/familia-2-desfocada.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,6 +26,7 @@
     .vetor-down {
         position: absolute;
         top: 0;
+        left: 0;
 
         width: 100%;
     }
@@ -32,7 +34,6 @@
         padding-top: 200px;
 
         width: 100%;
-        max-width: 1100px;
 
         display: flex;
         flex-direction: column;
@@ -56,15 +57,26 @@
     }
 
     @media (min-width: 769px) {
-        padding-top: 20px;
+        width: auto;
+
+        padding: 20px 100px;
+
+        align-items: baseline;
 
         .text-div {
+            align-items: baseline;
+
             > h1 {
                 font-size: 4rem;
             }
             > p {
                 font-size: 1.125rem;
             }
+        }
+    }
+    @media (min-width: 1100px) {
+        .text-div {
+            padding-top: 25%;
         }
     }
 }

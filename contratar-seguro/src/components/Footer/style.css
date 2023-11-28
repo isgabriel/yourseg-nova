@@ -1,0 +1,36 @@
+.footer {
+    padding: 15px 20px;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+
+    > img {
+        width: 19px;
+        height: 19px;
+    }
+    > p {
+        color: #000;
+
+        text-transform: uppercase;
+
+        font-family: "Sora", sans-serif;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+    @media (min-width: 769px) {
+        gap: 10px;
+        > img {
+            width: 35px;
+            height: 35px;
+        }
+        > p {
+            font-size: 1.125rem;
+        }
+    }
+}
