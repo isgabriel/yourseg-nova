@@ -12,17 +12,18 @@
 ## 🚀 Funcionalidades
 
 -   Seção "Home", com apresentação geral da empresa;
-    <img src="" alt="home"/>
+    <img src="https://github.com/isgabriel/yourseg_frontend/blob/main/readme/home.png?raw=true" alt="home"/>
 
 -   Seção "Quem Somos", com informações mais detalhadas sobre a empresa e tipos de seguros fornecidos;
-    <img src="" alt="quem somos"/>
-    <img src="" alt="quem somos"/>
+    <img src="https://github.com/isgabriel/yourseg_frontend/blob/main/readme/quem-somos-1.png?raw=true" alt="quem somos"/>
+    <img src="https://github.com/isgabriel/yourseg_frontend/blob/main/readme/quem-somos-2.png?raw=true" alt="quem somos"/>
 
 -   Seção "Contratar seguro", com formulário para preenchimento e captação de clientes;
-    <img src="" alt="contratar seguro"/>
+    <img src="https://github.com/isgabriel/yourseg_frontend/blob/main/readme/contratar-seguro-1.png?raw=true" alt="contratar seguro"/>
+    <img src="https://github.com/isgabriel/yourseg_frontend/blob/main/readme/contratar-seguro-2.png?raw=true" alt="contratar seguro"/>
 
--   Menu mobile;
-    <img src="" alt="menu mobile"/>
+-   Menu mobile;  
+    <img src="https://github.com/isgabriel/yourseg_frontend/blob/main/readme/menu-mobile.png?raw=true" alt="menu mobile"/>
 
 ## 🔨 Técnicas e Tecnologias utilizadas no Projeto
 
