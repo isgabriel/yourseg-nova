@@ -24,7 +24,7 @@ const Home = () => {
                 </p>
             </div>
             <img
-                src="https://github.com/isgabriel/yourseg-nova/blob/main/aplicacao-yourseg/src/assets/familia-1.png?raw=true"
+                src="https://github.com/isgabriel/yourseg_frontend/blob/main/src/assets/familia-1.png?raw=true"
                 alt="familia"
                 className="family"
             />
