@@ -5,7 +5,7 @@
 
 ## ✔️ Descrição do projeto
 
-<p>Landing Page desenvolvida para uma empresa Seguradora.</p>
+<p>Landing Page desenvolvida para uma empresa Seguradora, com foco na captação de novos leads utilizando formulário de contratação.</p>
 
 -   Link do deploy: https://yourseg.vercel.app/
 
@@ -42,39 +42,17 @@ Caso deseje utilizar/testar o projeto localmente, siga os passos:
 
          git clone git@github.com:isgabriel/yourseg_frontend.git
 
-2.  Entre no diretório principal do projeto (single-spa):
+2.  Instale as dependências utlizando o yarn:
 
-         cd single-spa
+         yarn
 
-3.  Instale as dependências utlizando o npm:
+3.  Inicie o servidor local
 
-         npm install
+        yarn dev
 
-4.  Inicie o servidor principal na porta 9000
+4.  Abra o servidor local no seu navegador com o seguinte link:
 
-        npm start -- --port 9000
-
-5.  Realize os processos 3 e 4 em todos os micro front-ends em diferentes terminais, com diferentes portas.
-
-        sevidor aplicacao-yourseg
-        cd aplicacao-yourseg
-        npm start -- --port 8500
-
-        sevidor header
-        cd header
-        npm start -- --port 8600
-
-        sevidor nossos-seguros
-        cd nossos-seguros
-        npm start -- --port 8700
-
-        sevidor contratar-seguro
-        cd contratar-seguro
-        npm start -- --port 8800
-
-6.  Abra o servidor local no seu navegador com o seguinte link:
-
-        http://localhost:9000/
+        http://localhost:5173/
 
 ## 🤝 Colaboradores
 
